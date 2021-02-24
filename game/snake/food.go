@@ -1,4 +1,4 @@
-package game
+package snake
 
 type food struct {
 	coordinate coordinate

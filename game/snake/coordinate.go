@@ -1,4 +1,4 @@
-package game
+package snake
 
 type coordinate struct {
 	x int

@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/mlaxwong/wasm-snake/game"
-)
+import "github.com/mlaxwong/wasm-snake/game/snake"
 
 var signal = make(chan int)
 
@@ -13,6 +11,6 @@ func keepAlive() {
 }
 
 func main() {
-	game.NewGame("game", 30, 30).Start()
+	snake.NewGame("game", 30, 30).Start()
 	keepAlive()
 }

@@ -1,4 +1,4 @@
-package game
+package snake
 
 import "syscall/js"
 

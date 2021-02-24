@@ -1,7 +1,9 @@
-package game
+package snake
 
 import (
 	"time"
+
+	"github.com/mlaxwong/wasm-snake/game/utils"
 )
 
 type arena struct {
@@ -85,8 +87,8 @@ func (self *arena) placeSnake() {
 func (self *arena) placeFood() {
 	var x, y int
 	for {
-		x = randInt(1, self.xGrid)
-		y = randInt(1, self.yGrid)
+		x = utils.RandInt(1, self.xGrid)
+		y = utils.RandInt(1, self.yGrid)
 
 		if !self.isOccupired(coordinate{x, y}) {
 			break
